@@ -1,13 +1,13 @@
 # Jenkins
 
-## Add a cron tab entry:
+### Add a cron tab entry:
 
 i.e To run the script daily at 5:00 AM use the following:
 ```
-crontab -l | { cat; echo "0 5 * * * path/to/script/cleanup"; } | crontab -
+crontab -l | { cat; echo "0 5 * * * path/to/script/cleanup.sh"; } | crontab -
 ```
 
-## List crontab entries
+### List crontab entries
 ```
 crontab -l
 ```
@@ -25,7 +25,7 @@ The schema below explanes the timestamp usage:
 
 More info can be found at cron [wiki](https://en.wikipedia.org/wiki/Cron)
 
-## Reload cron
+### Reload cron
 ```
 sudo service cron reload
 ```
